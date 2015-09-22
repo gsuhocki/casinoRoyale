@@ -1,4 +1,4 @@
-package test.illcoder.casinoRoyale.test.illcoder.casinoRoyale;
+package test.illcoder.casinoRoyale;
 
 /**
  * Created by syoung on 9/22/15.
