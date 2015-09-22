@@ -1,6 +1,6 @@
-package blackjack;
+package io.illcoder.casinoRoyale.blackjack;
 
-import core.CardGameLogic;
+import io.illcoder.casinoRoyale.core.CardGameLogic;
 
 /**
  * Created by syoung on 9/22/15.

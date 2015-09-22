@@ -1,6 +1,6 @@
-package poker;
+package io.illcoder.casinoRoyale.poker;
 
-import core.CardGameLogic;
+import io.illcoder.casinoRoyale.core.CardGameLogic;
 
 /**
  * Created by syoung on 9/22/15.
