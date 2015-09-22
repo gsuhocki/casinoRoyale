@@ -1,5 +1,9 @@
 package io.illcoder.casinoRoyale.core;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  * Created by syoung on 9/22/15.
  */
@@ -17,6 +21,7 @@ public class Dealer {
 
     }
 
+
     public Deck createDeck(){
         return new Deck();
     }
@@ -28,6 +33,7 @@ public class Dealer {
      */
     public String takeWager(int wager){
        String wagerConfirm = "We have accepted your bet of " + wager;
+
         return wagerConfirm;
     }
 
@@ -35,9 +41,24 @@ public class Dealer {
      * Starts the game and
      * @return Message to user letting them know which game has started.
      */
-    public String runGame(){
+    public void runGame() throws IOException {
         String gameMessage= "Starting game... ";
-        return gameMessage;
+        Boolean continueLoop = true;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        while(continueLoop){
+
+
+            System.out.println("Enter response");
+            String input = br.readLine();
+            if (input.equals("quit"))  continueLoop = false;
+
+
+
+
+
+        }
+
     }
 
     /**

@@ -12,4 +12,19 @@ public class Player {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
 }
