@@ -28,20 +28,20 @@ public class RankTest {
     }
 
     @Test
-    public void getBlackJackValueTest(){
-        assertEquals("Testing the value Rank.TWO should return 2", 2, Rank.TWO.getBlackJackValue());
-        assertEquals("Testing the value Rank.THREE should return 3", 3, Rank.THREE.getBlackJackValue());
-        assertEquals("Testing the value Rank.FOUR should return 4", 4, Rank.FOUR.getBlackJackValue());
-        assertEquals("Testing the value Rank.FIVE should return 5", 5, Rank.FIVE.getBlackJackValue());
-        assertEquals("Testing the value RANK.SIX should return 6", 6, Rank.SIX.getBlackJackValue());
-        assertEquals("Testing the value Rank.SEVEN should return 7", 7, Rank.SEVEN.getBlackJackValue());
-        assertEquals("Testing the value Rank.EIGHT should return 8", 8, Rank.EIGHT.getBlackJackValue());
-        assertEquals("Testing the value Rank.NINE should return 9", 9, Rank.NINE.getBlackJackValue());
-        assertEquals("Testing the value Rank.TEN should return 10", 10, Rank.TEN.getBlackJackValue());
-        assertEquals("Testing the value Rank.JACK should return 10", 10, Rank.JACK.getBlackJackValue());
-        assertEquals("Testing the value Rank.QUEEN should return 10", 10, Rank.QUEEN.getBlackJackValue());
-        assertEquals("Testing the value Rank.KING should return 10", 10, Rank.KING.getBlackJackValue());
-        assertEquals("Testing the value Rank.ACE should return 11", 11, Rank.ACE.getBlackJackValue());
+    public void getBlackjackValueTest(){
+        assertEquals("Testing the value Rank.TWO should return 2", 2, Rank.TWO.getBlackjackValue());
+        assertEquals("Testing the value Rank.THREE should return 3", 3, Rank.THREE.getBlackjackValue());
+        assertEquals("Testing the value Rank.FOUR should return 4", 4, Rank.FOUR.getBlackjackValue());
+        assertEquals("Testing the value Rank.FIVE should return 5", 5, Rank.FIVE.getBlackjackValue());
+        assertEquals("Testing the value RANK.SIX should return 6", 6, Rank.SIX.getBlackjackValue());
+        assertEquals("Testing the value Rank.SEVEN should return 7", 7, Rank.SEVEN.getBlackjackValue());
+        assertEquals("Testing the value Rank.EIGHT should return 8", 8, Rank.EIGHT.getBlackjackValue());
+        assertEquals("Testing the value Rank.NINE should return 9", 9, Rank.NINE.getBlackjackValue());
+        assertEquals("Testing the value Rank.TEN should return 10", 10, Rank.TEN.getBlackjackValue());
+        assertEquals("Testing the value Rank.JACK should return 10", 10, Rank.JACK.getBlackjackValue());
+        assertEquals("Testing the value Rank.QUEEN should return 10", 10, Rank.QUEEN.getBlackjackValue());
+        assertEquals("Testing the value Rank.KING should return 10", 10, Rank.KING.getBlackjackValue());
+        assertEquals("Testing the value Rank.ACE should return 11", 11, Rank.ACE.getBlackjackValue());
 
     }
 

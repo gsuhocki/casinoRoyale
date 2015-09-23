@@ -9,16 +9,16 @@ public enum Rank {
     QUEEN(12,10), KING(13,10), ACE(14,11);
 
     private int pokerValue;
-    private int blackJackValue;
+    private int blackjackValue;
 
     /**
      * Rank object Constructor that establishes the value type of poker and black jack
       * @param pokerValue
-     * @param blackJackValue
+     * @param blackjackValue
      */
-    Rank(int pokerValue, int blackJackValue){
+    Rank(int pokerValue, int blackjackValue){
         this.pokerValue = pokerValue;
-        this.blackJackValue = blackJackValue;
+        this.blackjackValue = blackjackValue;
 
     }
 
@@ -32,9 +32,9 @@ public enum Rank {
 
     /**
      * This function gets the numeric value for black jack for a particular rank
-     * @return int blackJackValue is the numeric value to be used in the black jack game
+     * @return int blackjackValue is the numeric value to be used in the black jack game
      */
-    public int getBlackJackValue(){
-        return this.blackJackValue;
+    public int getBlackjackValue(){
+        return this.blackjackValue;
     }
 }
