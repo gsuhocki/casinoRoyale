@@ -5,14 +5,18 @@ import io.illcoder.casinoRoyale.core.Player;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Scanner;
+
 
 /**
  * Created by sstrauss on 9/22/15.
  */
 public class BlackJackLogicTest {
+
+    BlackJackLogic blackJackLogic = new BlackJackLogic();
     @Test
     public void testsPause(){
-        BlackJackLogic blackJackLogic = new BlackJackLogic(p1);
+
         System.out.println("check timer");
         blackJackLogic.pause(3);
 
@@ -50,11 +54,23 @@ public class BlackJackLogicTest {
     }
 
 
+//    @Test
+//    public void checkBlackJackPointConstrains(){
+//        Assert.assertEquals("If score ever goes above 21, that player automatically loses.", "You lose", );
+//    }
+
     @Test
-    public void checkBlackJackPointConstrains(){
-        Assert.assertEquals("If score ever goes above 21, that player automatically loses.", "You lose", );
+    public void checkIfInputIsBeingTakenInAsInt(){
+        Assert.assertEquals("Should return the users wager as an int", 50, blackJackLogic.takeWager());
     }
+    @Test
+    public int takeWager(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please make your wager  ");
+        int wager =  scan.nextInt();
+        System.out.println("Your wager of " + wager);
 
 
-
+        return wager;
+    }
 }

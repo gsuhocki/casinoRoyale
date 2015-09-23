@@ -20,7 +20,8 @@ public class DealerTest {
 
    @Test
     public void checkToSeeIfDealerTakesWager(){
-       Assert.assertEquals("Check to see if dealer accepts wager.", "We have accepted your bet of 5", dealer.takeWager(5));
+       Assert.assertEquals("Check to see if dealer accepts wager.",
+               "We have accepted your bet of 5", dealer.takeWager(5));
    }
 //    @Test
 //    public void checkRunGame() throws IOException {
@@ -30,18 +31,21 @@ public class DealerTest {
 
     @Test
     public void checkMessageWhenHandIsDealt(){
-        Assert.assertEquals("Checks message recieved after dealing hand", "That's your hand, deal with it!", dealer.dealHand());
+        Assert.assertEquals("Checks message recieved after dealing hand",
+                "That's your hand, deal with it!", dealer.dealHand());
     }
 
     @Test
     public void checkWhoseHandWinsOrIfThereIsATie(){
         Player player = new Player("Sean");
-        Assert.assertEquals("Checks to see who wins and returns a string with the winner", "Player wins", dealer.compareHands() );
+        Assert.assertEquals("Checks to see who wins and returns a string with the winner",
+                "Player wins", dealer.compareHands() );
     }
 
     @Test
     public void checkQuit(){
-        Assert.assertEquals("Checks to see if quit function works", "Returning to main menu", dealer.quit());
+        Assert.assertEquals("Checks to see if quit function works", "Returning to main menu",
+                dealer.quit());
     }
 
 

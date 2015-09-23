@@ -6,10 +6,15 @@ package io.illcoder.casinoRoyale.core;
 public class Player {
     private String name;
     private int money = 500;
+    private Card[] hand = new Card[10];
 
 
     public Player(String name){
         this.name = name;
+    }
+
+    public Player(){
+
     }
 
     public String getName() {
@@ -18,6 +23,10 @@ public class Player {
 
     public int getMoney() {
         return money;
+    }
+
+    public Card[] getHand() {
+        return hand;
     }
 
     public void setName(String name) {

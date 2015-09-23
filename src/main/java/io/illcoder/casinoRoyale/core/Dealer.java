@@ -26,16 +26,7 @@ public class Dealer {
         return new Deck();
     }
 
-    /**
-     * Dealer takes wager from player
-     * @param wager how much money player is betting
-     * @return Confirmation string.
-     */
-    public String takeWager(int wager){
-       String wagerConfirm = "We have accepted your bet of " + wager;
 
-        return wagerConfirm;
-    }
 
     /**
      * Starts the game and
