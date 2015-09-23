@@ -1,8 +1,8 @@
 package test.illcoder.casinoRoyale;
 
+import io.illcoder.casinoRoyale.core.Rank;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import test.illcoder.casinoRoyale;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by gsuhocki on 9/23/15.
