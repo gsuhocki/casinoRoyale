@@ -9,7 +9,7 @@ public class CardTest {
 
     @Test
     public void getSuitTest(){
-        assertEquals("Testing the value Card.HEART should return HEART", HEART, Card.HEART.getSuit());
+        assertEquals("Testing the value Card.HEART should return HEART", HEART, Card.getSuit());
     }
 
 }

@@ -7,14 +7,14 @@ package io.illcoder.casinoRoyale.core;
 
 public class Card {
 
-    enum Suit{SPADE,DIAMOND,CLUB, HEART}
+    public enum Suit{SPADE,DIAMOND,CLUB, HEART}
     enum Rank{TWO, THREE, JACK}
 
     private Suit suit;
     private Rank rank;
 
-    private int valuePoker;
-    private int valueBlackJack;
+    private int cardPokerValue;
+    private int cardBlackjackValue;
 
     /**
      * Constructor for Card class
@@ -25,6 +25,8 @@ public class Card {
 
         this.suit = suit;
         this.rank = rank;
+        this.cardPokerValue = this.rank.getPokerValue();
+        this.cardBlackjackValue = this.rank.getBlackjackValue();
     }
 
     public Suit getSuit(){
@@ -35,11 +37,11 @@ public class Card {
         return this.rank;
     }
 
-    public int getValuePoker(){
-        return valuePoker;
+    public int getCardPokerValue(){
+        return cardPokerValue;
     }
 
-    public int getValueBlackJack(){
-        return valueBlackJack;
+    public int getCardBlackjackValue(){
+        return cardBlackjackValue;
     }
 }
