@@ -41,7 +41,7 @@ public class Deck {
         return deck;
     }
 
-    public static void main (String[] args){
+/*    public static void main (String[] args){
         Deck deck1 = new Deck();
         List<Card> deck2 = deck1.getShuffledDeck();
         System.out.println(deck2.get(0));
@@ -49,5 +49,5 @@ public class Deck {
 
         System.out.println(deck2.get(0));
     }
-
+*/
 }
