@@ -38,9 +38,7 @@ public enum Rank {
         return this.blackjackValue;
     }
 
-    //public String getRank(){
-        //return this.valueOf();
-    //}
+
 
 }
 

@@ -8,8 +8,6 @@ import io.illcoder.casinoRoyale.core.Suit;
 
 public class Card {
 
-
-
     private Suit suit;
     private Rank rank;
 
@@ -17,7 +15,8 @@ public class Card {
     private int cardBlackjackValue;
 
     /**
-     * Constructor for Card class
+     * Constructor for the Card class that establishes the value for suit and rank.
+     * It also gets the Poker numeric value and the Blackjack numeric value which pulls from the Rank class.
      * @param suit
      * @param rank
      */
@@ -29,24 +28,37 @@ public class Card {
         this.cardBlackjackValue = this.rank.getBlackjackValue();
     }
 
+    /**
+     * This function gets the suit value for the cards
+     * @return
+     */
     public Suit getSuit(){
         return this.suit;
     }
 
+    /**
+     * This function gets the rank value for the cards
+     * @return
+     */
     public Rank getRank(){
         return this.rank;
     }
 
+    /**
+     * This function gets the numeric value for poker for a particular rank
+     * @return int cardPokerValue is the numeric value to be used in the poker game
+     */
     public int getCardPokerValue(){
         return cardPokerValue;
     }
 
+    /**
+     * This function gets the numeric value for blackjack for a particular rank
+     * @return int cardBlackjackValue is the numeric value to be used in the poker game
+     */
     public int getCardBlackjackValue(){
         return cardBlackjackValue;
     }
 
-    public static void main(String[] args) {
-        Card xcard = new Card(Suit.HEARTS, Rank.FIVE);
-        System.out.println(xcard.rank);
-    }
+
 }
