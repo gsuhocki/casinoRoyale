@@ -1,6 +1,6 @@
-package io.illcoder.casinoRoyale.core;
-import io.illcoder.casinoRoyale.core.Rank;
-import io.illcoder.casinoRoyale.core.Suit;
+package test.illcoder.casinoRoyale;
+import test.illcoder.casinoRoyale.Rank;
+import test.illcoder.casinoRoyale.Suit;
 
 /**
  * Created by syoung on 9/22/15.
