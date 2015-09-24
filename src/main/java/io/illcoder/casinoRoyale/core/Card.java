@@ -60,5 +60,13 @@ public class Card {
         return cardBlackjackValue;
     }
 
+    /**
+     * This function displays the rank and suit of the shuffled card
+     * @return
+     */
+    public String toString(){
+        return "This Card is the " + rank + " of " + suit;
+    }
+
 
 }
