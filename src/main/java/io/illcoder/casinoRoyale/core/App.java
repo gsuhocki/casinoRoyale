@@ -4,19 +4,17 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-
 /**
  * This program greets the player and sends them to games based upon their input. As well
  * as serving as a return pad for players that leave a game
- *
  */
 public class App {
 
     //Dealer dealer = new Dealer;
 
 
-//intiates scanner for entire class
-    private static Scanner scanner = new Scanner( System.in );
+    //intiates scanner for entire class
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
         System.out.println(" __   __    ______     ___           _______. __  .__   __.   ______      .______        ______   ____    ____  ___       __       _______  __   __  \n" +
@@ -29,22 +27,20 @@ public class App {
         System.out.print("The Casino Royale's doors swoosh open at your approach.\n A myriad of fragrances and aromas accompany the cool\n" +
                 "air that makes the dry heat of desert \n a distant memory. A middle aged attendant" +
                 " with a snake like smile you don't trust approaches. Hey whats your name pal?: ");
-
-
+        //Starts method for name input after prompt and game selection
+            menuSelection();
+    }
+    //created method containing all main menu user input.
+    private static void menuSelection() {
         //This string will set the players name
-        String playerName = scanner.nextLine();
-        //Prompt and input for player to choose a game
         //Player player1 = new Player(String name, int money)
         //playerName = player.name
-        /*implemented while loop for returnToMenu for players to return here when exiting a game.
-        //while (returnToMenu == true)
-            //System.out.println("You leave the table and return to the main floor.");
-        */
+        String playerName = scanner.nextLine();
         Scanner in = new Scanner(System.in);
-            System.out.printf("Welcome to the Game room " +playerName+ "! what do you wanna play? " +
-                    "1 for BlackJack, " +
-                    "2 for Poker, or " +
-                    "0 to quit:  ");
+        System.out.printf("Welcome to the Game room " + playerName + "! what do you wanna play? " +
+                "1 for BlackJack, " +
+                "2 for Poker, or " +
+                "0 to quit:  ");
         //start loop for switch statement
         Boolean continueLoop = true;
         while (continueLoop) {
@@ -74,9 +70,9 @@ public class App {
                     //ends the program by terminating loop
                     break;
                 default:
-                    System.out.println( "It's either 1 for BlackJack, 2 for Poker, or 0 to quit...This ain't rocket science kid.");
+                    System.out.println("It's either 1 for BlackJack, 2 for Poker, or 0 to quit...This ain't rocket science kid.");
                     //continues loop since an invalid response was given prompts player with correct commands and allows them to try again.
-                    continue ;
+                    continue;
 
             }
             System.out.println(gameSelection);
