@@ -7,8 +7,7 @@ package io.illcoder.casinoRoyale.core;
 
 public class Card {
 
-    public enum Suit{SPADE,DIAMOND,CLUB, HEART}
-    enum Rank{TWO, THREE, JACK}
+
 
     private Suit suit;
     private Rank rank;
