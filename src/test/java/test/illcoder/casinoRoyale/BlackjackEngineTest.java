@@ -1,24 +1,23 @@
 package test.illcoder.casinoRoyale;
 
-import io.illcoder.casinoRoyale.blackjack.BlackJackLogic;
-import io.illcoder.casinoRoyale.core.Player;
+import io.illcoder.casinoRoyale.Player;
+import io.illcoder.casinoRoyale.blackjack.BlackjackEngine;
+
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.Scanner;
 
 
 /**
  * Created by sstrauss on 9/22/15.
  */
-public class BlackJackLogicTest {
+public class BlackjackEngineTest {
 
-    BlackJackLogic blackJackLogic = new BlackJackLogic();
+    BlackjackEngine blackjackEngine = new BlackjackEngine();
     @Test
     public void testsPause(){
 
         System.out.println("check timer");
-        blackJackLogic.pause(3);
+        blackjackEngine.pause(3);
 
         System.out.println("__________ .__                    __          ____.                 __     \n" +
                 "\\______   \\|  |  _____     ____  |  | __     |    |_____     ____  |  | __ \n" +
@@ -27,7 +26,7 @@ public class BlackJackLogicTest {
                 " |______  /|____/(____  / \\___  >|__|_ \\ \\________|(____  / \\___  >|__|_ \\ \n" +
                 "        \\/            \\/      \\/      \\/                \\/      \\/      \\/ ");
 
-        blackJackLogic.pause();
+        blackjackEngine.pause();
         System.out.println("__________ .__                    __          ____.                 __     \n" +
                 "\\______   \\|  |  _____     ____  |  | __     |    |_____     ____  |  | __ \n" +
                 " |    |  _/|  |  \\__  \\  _/ ___\\ |  |/ /     |    |\\__  \\  _/ ___\\ |  |/ / \n" +
@@ -42,15 +41,15 @@ public class BlackJackLogicTest {
     public void testBlackJackConstructorWithPlayerInput(){
 
 
-        BlackJackLogic blackJackLogic = new BlackJackLogic(p1);
+        BlackjackEngine blackjackEngine = new BlackjackEngine(p1);
         Assert.assertEquals("Should be the created Player at the beginning of the game", "Sean", p1.getName());
 
     }
 
     @Test
     public void checkStayFunction(){
-        BlackJackLogic blackJackLogic = new BlackJackLogic(p1);
-        Assert.assertEquals("Should print message saying message", "You must think your lucky!", blackJackLogic.stay());
+        BlackjackEngine blackjackEngine = new BlackjackEngine(p1);
+        Assert.assertEquals("Should print message saying message", "You must think your lucky!", blackjackEngine.stay());
     }
 
 
@@ -61,16 +60,12 @@ public class BlackJackLogicTest {
 
     @Test
     public void checkIfInputIsBeingTakenInAsInt(){
-        Assert.assertEquals("Should return the users wager as an int", 50, blackJackLogic.takeWager());
+        Assert.assertEquals("Should return the users wager as an int", 50, blackjackEngine.takeWager(p1));
     }
+
     @Test
-    public int takeWager(){
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Please make your wager  ");
-        int wager =  scan.nextInt();
-        System.out.println("Your wager of " + wager);
-
-
-        return wager;
+    public void testRunGameBlackJackLogic(){
+        blackjackEngine.runGame(p1);
     }
+
 }
