@@ -9,7 +9,12 @@ public class CardTest {
 
     @Test
     public void getSuitTest(){
+        Card card = new Card()
         assertEquals("Testing the value Card.HEART should return HEART", HEART, Card.getSuit());
     }
 
+    @Test
+    public void getRankTest(){
+        assertEquals("Testing the value Rank.Two")
+    }
 }
