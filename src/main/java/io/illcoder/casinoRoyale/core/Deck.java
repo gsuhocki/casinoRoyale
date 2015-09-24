@@ -1,9 +1,7 @@
 package io.illcoder.casinoRoyale.core;
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
-=======
->>>>>>> f83e9caf7263e33a20c27947f67690d32fe2b356
+
 import java.util.*;
 
 /**
@@ -53,36 +51,3 @@ public class Deck {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-=======
- * Build card deck to play poker or blackjack
- */
-public class Deck {
-
-    public static Card cards[];
-
-    public Deck() {
-        this.cards = new Card[52];
-        for (i=0;i<cards.length;i++){
-            Card card = new Card();
-            this.cards[i] = card;
-        }
-
-    public void shuffle() {
-        Collections.shuffle(cards);
-
-    }
-
-}
->>>>>>> f83e9caf7263e33a20c27947f67690d32fe2b356
