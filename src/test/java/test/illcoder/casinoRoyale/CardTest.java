@@ -1,5 +1,7 @@
 package test.illcoder.casinoRoyale;
 import io.illcoder.casinoRoyale.core.Card;
+import io.illcoder.casinoRoyale.core.Rank;
+import io.illcoder.casinoRoyale.core.Suit;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 /**
@@ -9,12 +11,14 @@ public class CardTest {
 
     @Test
     public void getSuitTest(){
-        Card card = new Card()
-        assertEquals("Testing the value Card.HEART should return HEART", HEART, Card.getSuit());
+        Card card = new Card(Suit.HEARTS, Rank.TWO);
+
+
+        assertEquals("Testing the value Card.HEART should return HEART", "HEARTS", card.toString());
     }
 
-    @Test
-    public void getRankTest(){
-        assertEquals("Testing the value Rank.Two")
-    }
+    //@Test
+   // public void getRankTest(){
+        //assertEquals("Testing the value Rank.Two")
+    //}
 }

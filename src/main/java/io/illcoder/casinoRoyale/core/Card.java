@@ -1,9 +1,10 @@
 package io.illcoder.casinoRoyale.core;
+import io.illcoder.casinoRoyale.core.Rank;
+import io.illcoder.casinoRoyale.core.Suit;
 
 /**
  * Created by syoung on 9/22/15.
  */
-
 
 public class Card {
 

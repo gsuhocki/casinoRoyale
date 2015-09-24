@@ -16,7 +16,7 @@ public enum Rank {
       * @param pokerValue
      * @param blackjackValue
      */
-    Rank(int pokerValue, int blackjackValue){
+     Rank(int pokerValue, int blackjackValue){
         this.pokerValue = pokerValue;
         this.blackjackValue = blackjackValue;
 
@@ -37,4 +37,10 @@ public enum Rank {
     public int getBlackjackValue(){
         return this.blackjackValue;
     }
+
+    //public String getRank(){
+        //return this.valueOf();
+    //}
+
 }
+
