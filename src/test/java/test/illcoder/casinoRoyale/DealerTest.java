@@ -42,7 +42,7 @@ public class DealerTest {
     @Test
     public void checkQuit(){
         Assert.assertEquals("Checks to see if quit function works", "Returning to main menu", dealer.quit());
-        dealer
+        
     }
 
 
