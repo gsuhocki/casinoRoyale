@@ -6,7 +6,6 @@ import java.util.*;
 
 /**
  * Created by syoung on 9/22/15.
-<<<<<<< HEAD
  *Build card deck to play poker or blackjack
  *
  */
@@ -24,23 +23,22 @@ public class Deck {
                deck.add(new Card(suit, rank));
             }
         }
-       // System.out.println(deck.get(0));
-        //Collections.shuffle(deck);
-        //System.out.println(deck.get(0));
     }
-
-
+    /*
+     *Add shuffle method and apply it to deck
+     */
     public void shuffleDeck(List<Card> _deck){
-        //private List<Card> sDeck;
-       // sDeck = _deck;
         Collections.shuffle(_deck);
-        //return sDeck;
     }
+
+    /*
+     *Add method to return the getShuffledDeck method to
+     */
 
     public List<Card> getShuffledDeck(){
         return deck;
     }
-
+/* Added to test the delivery of the shuffled deck
 /*    public static void main (String[] args){
         Deck deck1 = new Deck();
         List<Card> deck2 = deck1.getShuffledDeck();
