@@ -1,25 +1,24 @@
 package io.illcoder.casinoRoyale.core;
-import io.illcoder.casinoRoyale.blackjack.BlackjackDealer;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
+
+
 /**
- * Created by syoung on 9/22/15.
+ * This program greets the player and sends them to games based upon their input. As well
+ * as serving as a return pad for players that leave a game
+ *
  */
 public class App {
+
+    //Dealer dealer = new Dealer;
+
+
 //intiates scanner for entire class
     private static Scanner scanner = new Scanner( System.in );
 
     public static void main(String[] args) throws IOException {
-        Player player = new Player();
-
-
-        //InputStreamReader inputStreamReader = new InputStreamReader(System.in);
-        //BufferedReader br = new BufferedReader(inputStreamReader);
-
         System.out.println(" __   __    ______     ___           _______. __  .__   __.   ______      .______        ______   ____    ____  ___       __       _______  __   __  \n" +
                 "|  | |  |  /      |   /   \\         /       ||  | |  \\ |  |  /  __  \\     |   _  \\      /  __  \\  \\   \\  /   / /   \\     |  |     |   ____||  | |  | \n" +
                 "|  | |  | |  ,----'  /  ^  \\       |   (----`|  | |   \\|  | |  |  |  |    |  |_)  |    |  |  |  |  \\   \\/   / /  ^  \\    |  |     |  |__   |  | |  | \n" +
@@ -30,18 +29,31 @@ public class App {
         System.out.print("The Casino Royale's doors swoosh open at your approach.\n A myriad of fragrances and aromas accompany the cool\n" +
                 "air that makes the dry heat of desert \n a distant memory. A middle aged attendant" +
                 " with a snake like smile you don't trust approaches. Hey whats your name pal?: ");
+
+
         //This string will set the players name
-        String enteredName = scanner.nextLine();
-        //Player player.name = enteredName;
-        //start loop for switch statement
-        Boolean continueLoop = true;
+        String playerName = scanner.nextLine();
         //Prompt and input for player to choose a game
+        //Player player1 = new Player(String name, int money)
+        //playerName = player.name
+        /*implemented while loop for returnToMenu for players to return here when exiting a game.
+        //while (returnToMenu == true)
+            //System.out.println("You leave the table and return to the main floor.");
+        */
         Scanner in = new Scanner(System.in);
-            System.out.printf("Welcome to the Game room Whale! what do you wanna play? " +
+            System.out.printf("Welcome to the Game room " +playerName+ "! what do you wanna play? " +
                     "1 for BlackJack, " +
                     "2 for Poker, or " +
                     "0 to quit:  ");
+        //start loop for switch statement
+        Boolean continueLoop = true;
         while (continueLoop) {
+            /*
+            *The first int takes the user input to choose which game they want to play
+            *The second int specifies the gameType by case number
+            *The String gameSelection is the message displayed when the user selects a game
+            * The default case value gives an error if the user input an invalid selection and uses the continue; to allow another input
+             */
             int input = in.nextInt();
             int gameType = input;
             String gameSelection;
@@ -49,21 +61,21 @@ public class App {
                 case 1:
                     gameSelection = " You strut confidently to the BlackJack table." +
                             " A slovenly man past his prime gaze meets yours as sit, he smiles confident of his pending victory.";
-                     class BlackjackDealer extends Dealer{
-                        Object BJ = new BlackjackDealer();
-                    }
+                    //starts a new blackjack game by creating BlackJackDealer object current loops ends
+
                     break;
                 case 2:
                     gameSelection = "You have a seat at the poker table. Your opponent smells like urine and failed dreams.";
-                     class PokerDealer extends Dealer {
-                        Object PD = new PokerDealer();
-                    }
+                    //starts a new blackjack game by creating PokerDealer object current loops ends
+
                     break;
                 case 0:
                     gameSelection = "You cut and run out the front door on foot. Your getting to old for this shit.";
+                    //ends the program by terminating loop
                     break;
                 default:
                     System.out.println( "It's either 1 for BlackJack, 2 for Poker, or 0 to quit...This ain't rocket science kid.");
+                    //continues loop since an invalid response was given prompts player with correct commands and allows them to try again.
                     continue ;
 
             }
@@ -74,3 +86,4 @@ public class App {
 
     }
 }
+//End
