@@ -1,5 +1,4 @@
-package io.illcoder.casinoRoyale.core;
-import io.illcoder.casinoRoyale.blackjack.BlackjackDealer;
+package io.illcoder.casinoroyal.core;
 
 import java.io.BufferedReader;
 import java.io.IOException;
