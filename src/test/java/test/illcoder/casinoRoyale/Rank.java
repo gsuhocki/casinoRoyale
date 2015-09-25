@@ -1,4 +1,4 @@
-package io.illcoder.casinoRoyale.core;
+package test.illcoder.casinoRoyale;
 
 /**
  * Created by clouie on 9/22/15.
@@ -38,7 +38,9 @@ public enum Rank {
         return this.blackjackValue;
     }
 
-
+    //public String getRank(){
+        //return this.valueOf();
+    //}
 
 }
 
